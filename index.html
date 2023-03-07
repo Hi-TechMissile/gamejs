@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>game</title>
+        <link rel="stylesheet" href = "style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body style="font: larger; font-family:'Segoe UI', Times New Roman, Geneva, Verdana, sans-serif">
+        
+        <div class ="my-5 text-lg" id="bar">
+            <span class="px-5 my-5 flex-initial">XP: <b id="xp">0</b> &#9889</span>
+            <span class="px-5 my-5 flex-initial">Health: <b id="health">100</b> <img class="flex-1 h-6 gold mb-1" src="heart.png"></span>
+            <span class="px-5 my-5 flex-initial">Gold: <b id="gold">20</b> <img class = "flex-1 h-6 gold mb-1" src="gold.png"></span>
+            <br>
+            <button class="mx-3 px-5 my-5
+                           bg-purple-400 py-2 rounded-xl border-solid border-black border-2
+                           hover:bg-teal-500 hover:text-white hover:shadow-2xl" id="button1">Go to Store</button>
+            <button class="px-5 my-5 
+                           bg-orange-400 py-2 rounded-xl border-solid border-black border-2
+                           hover:bg-red-500 hover:text-white hover:shadow-2xl" id="button2">Go to Cave</button>
+            <button class="mx-3 px-5 my-5
+                         bg-green-400 py-2 rounded-xl border-solid border-black border-2
+                         hover:bg-pink-500 hover:text-white hover:shadow-2xl" id="button3">Fight Dragon</button>
+        </div>
+        <p class="mx-5"><b>Welcome to Dragon Repeller.</b> 
+            <br>>Use the buttons to navigate and perform actions. You need to defeat Monsters and 
+            <b class="text-orange-500 font-bold">kill the Dragon to win.</b><br>
+            >You can buy Weapons or Health using Gold, at the store. <br>
+            >Monsters reside in caves. <b class="text-orange-500">Defeat Monsters to earn XP.</b>
+        </p>
+        <br>
+        <div id="slime" class="text-xl mx-5 hidden">Monster HitPoints: <b id = "hp1"></b>
+        <br>
+        Difficulty: <span class= "text-lime-500 hidden" id = "easy"><b>EASY</b></span>
+                    <span class = "text-orange-500 hidden" id = "hard"><b>HARD</b></span>
+                    <span class="text-red-500 hidden" id = "insane"><b>INSANE</b></span>
+        </div>
+        <p class="mx-4">
+            <br>Console Box:
+            <div id="text" class="bg-amber-300 mx-3 px-5 py-5 border-2 border-solid border-black text-xl">You are in the town square now. 
+                You see a sign that says "store."</div>
+        </p>
+        <p class="mx-4">
+            <br>
+            <div class="bg-amber-300 mx-3 px-5 py-5 border-2 border-solid border-black text-xl">You currently have: <b id = "stat">Stick</b>
+            <br>Power: <b id = "p">10</b></div>
+        </p>
+        <script src="script.js"></script>
+    </body>
+</html>
